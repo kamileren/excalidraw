@@ -38,7 +38,7 @@ jobs:
         run: yarn build:packages
 
       - name: Build app
-        run: yarn build:app
+        run: yarn build:app:docker
         env:
           VITE_APP_DISABLE_SENTRY: true
 
